@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Domus – Affitti Brevi Verona</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Luna Domus Logo" class="logo" />
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#perche">Perché Noi</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Gestione Affitti Brevi a Verona</h1>
+      <p>Hai una casa a Verona e poco tempo per gestirla? Ci occupiamo di tutto. Tu incassi. Noi lavoriamo.</p>
+      <a href="#contatti" class="btn">Inizia ora</a>
+    </section>
+
+    <section id="perche">
+      <h2>Perché scegliere Luna Domus</h2>
+      <ul>
+        <li>Servizio sartoriale, non siamo un'agenzia</li>
+        <li>Gestione completa: pulizie, prezzi, ospiti</li>
+        <li>Massimizziamo i profitti, zero stress</li>
+        <li>Comunicazione in italiano, inglese, spagnolo</li>
+      </ul>
+    </section>
+
+    <section id="servizi">
+      <h2>Servizi Offerti</h2>
+      <ul>
+        <li>Inserzione professionale su Airbnb</li>
+        <li>Ottimizzazione prezzi e visibilità</li>
+        <li>Gestione ospiti, check-in/check-out</li>
+        <li>Pulizie e manutenzione</li>
+        <li>Report mensili con dati chiari</li>
+      </ul>
+    </section>
+
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <p>Email: <a href="mailto:lunadomus1@gmail.com">lunadomus1@gmail.com</a></p>
+      <p>Telefono: <a href="tel:+393771359441">+39 377 1359441</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/lunadomusverona" target="_blank">@lunadomusverona</a></p>
+
+      <form action="mailto:lunadomus1@gmail.com" method="post" enctype="text/plain">
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="proprieta">Descrivi la tua proprietà:</label><br />
+        <textarea id="proprieta" name="proprieta" rows="4"></textarea><br />
+
+        <label for="preferenza">Come preferisci essere contattato?</label><br />
+        <select id="preferenza" name="preferenza">
+          <option value="email">Email</option>
+          <option value="telefono">Telefono</option>
+        </select><br />
+
+        <input type="submit" value="Invia" class="btn" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Toma Dennis – Property Manager</p>
+    <p>&copy; 2025 Luna Domus</p>
+  </footer>
+</body>
+</html>
