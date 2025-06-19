@@ -1,56 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Domus – Gestione Affitti Brevi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Logo Luna Domus" class="logo">
+    <nav>
+      <a href="#vantaggi">Vantaggi</a>
+      <a href="#come">Come Funziona</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fdfaf5;
-  color: #1c1c1c;
-}
-header {
-  background: #0c223d;
-  color: white;
-  padding: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
-  height: 60px;
-}
-nav a {
-  color: white;
-  margin-left: 1em;
-  text-decoration: none;
-}
-.hero {
-  background: #ececec;
-  padding: 2em;
-  text-align: center;
-}
-.hero .btn {
-  background: #0c223d;
-  color: white;
-  padding: 0.5em 1em;
-  text-decoration: none;
-}
-section {
-  padding: 2em;
-}
-footer {
-  background: #0c223d;
-  color: white;
-  text-align: center;
-  padding: 1em;
-}
-input, textarea, select {
-  width: 100%;
-  margin-bottom: 1em;
-  padding: 0.5em;
-}
-.btn {
-  background: #0c223d;
-  color: white;
-  border: none;
-  padding: 0.7em 1.5em;
-  cursor: pointer;
-}
+  <section class="hero">
+    <h1>Affitta senza pensieri.<br> Pensiamo a tutto noi.</h1>
+    <p>Gestione affitti brevi per chi ha già un lavoro e vuole solo vedere i risultati.</p>
+    <a href="#contatti" class="btn">Richiedi una valutazione gratuita</a>
+  </section>
+
+  <section id="vantaggi" class="vantaggi">
+    <h2>Perché scegliere Luna Domus</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>✅ Guadagni massimizzati</h3>
+        <p>Ottimizziamo il prezzo ogni giorno. Meno turnover, più profitti netti.</p>
+      </div>
+      <div class="card">
+        <h3>⏱️ Nessuna perdita di tempo</h3>
+        <p>Ci occupiamo di tutto: ospiti, pulizie, manutenzione e report.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Servizio sartoriale</h3>
+        <p>Niente pacchetti standard. Ogni appartamento ha una strategia su misura.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="come">
+    <h2>Come funziona</h2>
+    <ol>
+      <li><strong>Contatto iniziale:</strong> ci racconti la tua proprietà</li>
+      <li><strong>Analisi e proposta:</strong> stimiamo ricavi e modalità operative</li>
+      <li><strong>Gestione completa:</strong> pensiamo a tutto, tu incassi</li>
+    </ol>
+  </section>
+
+  <section id="servizi">
+    <h2>Servizi Offerti</h2>
+    <ul>
+      <li>Inserzione e gestione completa Airbnb</li>
+      <li>Ottimizzazione prezzi manuale</li>
+      <li>Comunicazione con gli ospiti in 3 lingue</li>
+      <li>Check-in e check-out (in presenza o da remoto)</li>
+      <li>Pulizie, lavanderia e manutenzione</li>
+      <li>Report mensili e aggiornamenti regolari</li>
+    </ul>
+  </section>
+
+  <section id="contatti">
+    <h2>Contattami</h2>
+    <p>Parliamone senza impegno. Compila il modulo e ti risponderò entro 24 ore.</p>
+    <form action="mailto:lunadomus1@gmail.com" method="post" enctype="text/plain">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="messaggio">Messaggio</label>
+      <textarea id="messaggio" name="messaggio" rows="4" placeholder="Che tipo di appartamento vuoi affidare?"></textarea>
+
+      <input type="submit" value="Invia richiesta" class="btn">
+    </form>
+    <div class="info-contatti">
+      <p>Email: <a href="mailto:lunadomus1@gmail.com">lunadomus1@gmail.com</a></p>
+      <p>Telefono: <a href="tel:+393771359441">+39 377 1359441</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/lunadomusverona" target="_blank">@lunadomusverona</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Toma Dennis – Property Manager | &copy; 2025 Luna Domus</p>
+  </footer>
+</body>
+</html>
